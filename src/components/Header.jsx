@@ -1,9 +1,7 @@
 import React, { useState } from "react";
 import { AiFillCloud } from "react-icons/ai";
-import axios from "axios";
 import { IoIosSunny } from "react-icons/io";
 import "../styles/Header.css";
-import { apiKey } from "../utils/key";
 
 const Header = ({ setCity }) => {
   const [input, setInput] = useState("");

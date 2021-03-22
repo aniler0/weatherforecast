@@ -23,7 +23,7 @@ const Body = ({ city, setCity }) => {
     <div className="forecast__body">
       <div className="today__forecast">
         {typeof city.location != "undefined" ? (
-          <div style={props} className="daily__container">
+          <div lassName="daily__container">
             <h3 style={{ fontWeight: "bolder", userSelect: "none" }}>Today</h3>
             <div className="main">
               <h2>{city.location.name}</h2>
