@@ -36,6 +36,7 @@ h4 {
 .search__details h4 {
   font-weight: bold;
   font-size: larger;
+  text-align: center;
 }
 .otherdays {
   display: flex;
