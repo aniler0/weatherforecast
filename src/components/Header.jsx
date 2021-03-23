@@ -39,7 +39,7 @@ const Header = ({ setCity }) => {
             required
           />
           <button onClick={handleCity} type="submit">
-            gizli buton
+            Search
           </button>
         </form>
       </div>

@@ -55,7 +55,16 @@
   outline: none;
 }
 .header__center button {
-  display: none;
+  display: inline-block;
+  border-radius: 5px;
+  margin-left: 5px;
+  outline: none;
+  border: none;
+  cursor: pointer;
+}
+.header__center button:hover {
+  background-color: rgb(243, 243, 243);
+  box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.2), 0 1px 5px 0 rgba(0, 0, 0, 0.19);
 }
 @media only screen and (max-width: 768px) {
   .header {
@@ -79,6 +88,6 @@
     margin-left: 0.7em;
   }
   .header__center button {
-    display: flex;
+    display: inline-block;
   }
 }
