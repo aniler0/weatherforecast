@@ -78,4 +78,7 @@
     padding-right: 5em;
     margin-left: 0.7em;
   }
+  .header__center button {
+    display: flex;
+  }
 }

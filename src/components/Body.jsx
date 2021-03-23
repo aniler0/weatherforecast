@@ -45,9 +45,8 @@ const Body = ({ city, setCity }) => {
         <div className="days">
           {typeof city.forecast != "undefined"
             ? city.forecast.forecastday.map((day, i) => (
-                <div className="days__forecast ">
+                <div key={i} className="days__forecast ">
                   <h3
-                    key={i}
                     style={{
                       marginTop: "10px",
                       fontWeight: "bolder",
@@ -56,7 +55,7 @@ const Body = ({ city, setCity }) => {
                   >
                     {day.date}
                   </h3>
-                  <div className="day__details">
+                  <div key={i} className="day__details">
                     <h4>{day.day.avgtemp_c}°C</h4>
                     <h4>{day.day.condition.text}</h4>
                   </div>
