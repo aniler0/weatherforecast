@@ -7,14 +7,12 @@ import { apiKey } from "../utils/key";
 const Body = ({ city, setCity }) => {
   useEffect(() => {
     const fetchWeather = async () => {
-      await axios
-        .get(
-          `https://api.weatherapi.com/v1/forecast.json?key=${apiKey}&q=${city}&days=5&aqi=no&alerts=no`
-        )
-        .then((response) => {
-          setCity(response.data);
-        })
-        .catch((error) => console.log(error));
+      try {
+      const { data } = await axios.get(`https://api.weatherapi.com/v1/forecast.json?key=${apiKey}&q=${city}&days=5&aqi=no&alerts=no`);
+        setCity(data);
+      } catch(error) {
+        console.log({ error });
+      }
     };
     fetchWeather();
   }, [city]);
